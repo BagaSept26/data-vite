@@ -1,6 +1,6 @@
 export const getBackendUrl = async () => {
   try {
-    const githubRawUrl = 'https://raw.githubusercontent.com/<nama_user_github>/<nama_repo_anda>/main/backend.txt'; // Ganti dengan URL raw file Anda
+    const githubRawUrl = 'https://raw.githubusercontent.com/BagaSept26/data-vite/main/backend.txt';
     const response = await fetch(githubRawUrl);
     if (!response.ok) {
       console.error(`Failed to fetch backend URL from GitHub: ${response.status} ${response.statusText}`);
